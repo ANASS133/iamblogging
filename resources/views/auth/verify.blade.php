@@ -2,7 +2,7 @@
 
 @section('content')
 <main class="sm:container sm:mx-auto sm:max-w-lg sm:mt-10">
-    <div class="flex">
+    <div class="flex justify-center">
         <div class="w-full">
 
             @if (session('resent'))
@@ -13,7 +13,7 @@
             @endif
 
             <section class="flex flex-col break-words bg-white sm:border-1 sm:rounded-md sm:shadow-sm sm:shadow-lg">
-                <header class="font-semibold bg-gray-200 text-gray-700 py-5 px-6 sm:py-6 sm:px-8 sm:rounded-t-md">
+                <header class="font-semibold bg-green-300 text-gray-700 py-5 px-6 sm:py-6 sm:px-8 sm:rounded-t-md">
                     {{ __('Verify Your Email Address') }}
                 </header>
 
@@ -24,7 +24,7 @@
 
                     <p>
                         {{ __('If you did not receive the email') }}, <a
-                            class="text-blue-500 hover:text-blue-700 no-underline hover:underline cursor-pointer"
+                            class="text-green-500 hover:text-green-700 no-underline hover:underline cursor-pointer"
                             onclick="event.preventDefault(); document.getElementById('resend-verification-form').submit();">{{ __('click here to request another') }}</a>.
                     </p>
 

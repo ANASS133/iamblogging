@@ -20,9 +20,18 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return view('blog.index')
-            ->with('posts', Post::orderBy('updated_at', 'DESC')->get());
+        $posts = Post::orderBy('updated_at', 'DESC')->get();
+    
+        // Apply word limit to each post's description
+        foreach ($posts as $post) {
+            if (str_word_count($post->description) > 25) {
+                $post->description = implode(' ', array_slice(explode(' ', $post->description), 0, 25)) . '...';
+            }
+        }
+    
+        return view('blog.index', compact('posts'));
     }
+    
 
     /**
      * Show the form for creating a new resource.

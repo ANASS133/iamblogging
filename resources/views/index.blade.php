@@ -5,12 +5,12 @@
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
                 <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
-                VOUS POUVEZ ÊTRE UN DÉVELOPPEUR CHEZ NOUS, PAS D'AUTRES 
+                    Welcome to the Blog
                 </h1>
                 <a 
                     href="/blog"
                     class="text-center bg-gray-50 text-gray-700 py-2 px-4 font-bold text-xl uppercase">
-                    AUTRES
+                    Explore More
                 </a>
             </div>
         </div>
@@ -18,46 +18,47 @@
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
-            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" width="700" alt="">
+            <!-- Image for blogging -->
+            <img src="{{ asset('images/blogging.jpg') }}" alt="Blogging Image" width="700">
         </div>
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
             <h2 class="text-3xl font-extrabold text-gray-600">
-            AVEC NOUS, VOUS POUVEZ ÊTRE UN DÉVELOPPEUR PRO !
+                Blogging Tips for Developers
             </h2>
             
             <p class="py-8 text-gray-500 text-s">
-            IL Y A CERTAINS BLOGS PEUVENT VOUS AIDER À ÊTRE DÉVELOPPEUR
+                Discover how blogging can enhance your coding skills and help you stay up-to-date with the latest trends in development.
             </p>
 
             <p class="font-extrabold text-gray-600 text-s pb-9">
-            EN UN CLIC, VÉRIFIEZ-LE !
+                Click below to explore more.
             </p>
 
             <a 
                 href="/blog"
                 class="uppercase bg-blue-500 text-gray-100 text-s font-extrabold py-3 px-8 rounded-3xl">
-                AUTRES
+                Explore
             </a>
         </div>
     </div>
 
     <div class="text-center p-15 bg-black text-white">
         <h2 class="text-2xl pb-5 text-l"> 
-        NOUS SOMMES UN DÉVELOPPEUR AIDE LES AUTRES À ÊTRE UN DÉVELOPPEUR DANS ...
+            Learn Blogging to Improve Your Development Skills
         </h2>
 
         <span class="font-extrabold block text-4xl py-1">
-        UX DESIGN
+            Writing for Developers
         </span>
         <span class="font-extrabold block text-4xl py-1">
-        GESTION DE PROJET
+            Content Creation
         </span>
         <span class="font-extrabold block text-4xl py-1">
-        SÉCURITÉ
+            Tech Writing
         </span>
         <span class="font-extrabold block text-4xl py-1">
-            BACKEND ET FRONTEND
+            Backend & Frontend Insights
         </span>
     </div>
 
@@ -67,11 +68,11 @@
         </span>
 
         <h2 class="text-4xl font-bold py-10">
-        DERNIERS POSTES
+            Latest Blog Posts
         </h2>
 
         <p class="m-auto w-4/5 text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque exercitationem saepe enim veritatis, eos temporibus quaerat facere consectetur qui.
+            Stay updated with our latest posts about development, coding tips, and blogging for tech enthusiasts.
         </p>
     </div>
 
@@ -83,18 +84,20 @@
                 </span>
 
                 <h3 class="text-xl font-bold py-10">
-                React.js, plus communément appelé React, est une bibliothèque JavaScript gratuite et open source. Il est préférable de créer des interfaces utilisateur en combinant des sections de code (composants) dans des sites Web complets. Construit à l'origine par Facebook, Meta et la communauté open source le maintiennent désormais. L’un des avantages de React est que vous pouvez l’utiliser autant ou aussi peu que vous le souhaitez ! Par exemple, vous pouvez créer l'intégralité de votre site dans React ou simplement utiliser un seul composant React sur une seule page.
-            </h3>
+                    React.js - A Powerful Tool for Modern Web Development
+                </h3>
 
                 <a 
-                    href=""
+                    href="#"
                     class="uppercase bg-transparent border-2 border-gray-100 text-gray-100 text-xs font-extrabold py-3 px-5 rounded-3xl">
-                    AUTRES
+                    Read More
                 </a>
             </div>
         </div>
         <div>
-            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+            <!-- Image for ReactJS -->
+            <img src="{{ asset('/images/tips.jpg') }}" alt="React Tips" width="700">
         </div>
+        <br><br><br>
     </div>
 @endsection
